@@ -1,5 +1,3 @@
-package com.Lab1;
-
 public class Lab1
 {
     /** Sorting algorithms **/
