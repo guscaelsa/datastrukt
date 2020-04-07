@@ -33,16 +33,44 @@ public class Lab1 {
     // Mergesort.
 
     public static int[] mergeSort(int[] array) {
-        throw new UnsupportedOperationException();
+        return mergeSort(array, 0, array.length);
     }
 
     // Mergesort part of an array
     private static int[] mergeSort(int[] array, int begin, int end) {
-        throw new UnsupportedOperationException();
+        if (begin == end) {
+            return new int[] {};
+        } else if (begin + 1 == end) {
+            return new int[] {array[begin]};
+        } else {
+            int split = begin + (end - begin) / 2;
+            return merge(mergeSort(array, begin, split), mergeSort(array, split, end));
+        }
     }
 
     // Merge two sorted arrays into one
     private static int[] merge(int[] left, int[] right) {
-        throw new UnsupportedOperationException();
+        int[] result = new int[left.length + right.length];
+        int l = 0; // index into left
+        int r = 0; // index into right
+        int i = 0; // index into result
+        for (;i<result.length; ++i) {
+            if (l >= left.length) {
+                result[i] = right[r];
+                ++r;
+            } else if (r >= right.length) {
+                result[i] = left[l];
+                ++l;
+            } else {
+                if (left[l] < right[r]) {
+                    result[i] = left[l];
+                    ++l;
+                } else {
+                    result[i] = right[r];
+                    ++r;
+                }
+            }
+        }
+        return result;
     }
 }
