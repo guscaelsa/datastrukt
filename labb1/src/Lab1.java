@@ -1,11 +1,9 @@
-public class Lab1
-{
+public class Lab1 {
     /** Sorting algorithms **/
 
     // in-place insertion sort.
 
-    public static void insertionSort(int[] array)
-    {
+    public static void insertionSort(int[] array) {
         if (array == null || array.length <= 1)
             return;
 
@@ -62,8 +60,7 @@ public class Lab1
     }
 
     // Swap two elements in an array
-    private static void swap(int[] array, int i, int j)
-    {
+    private static void swap(int[] array, int i, int j) {
         int x = array[i];
         array[i] = array[j];
         array[j] = x;
@@ -71,20 +68,17 @@ public class Lab1
 
     // Mergesort.
 
-    public static int[] mergeSort(int[] array)
-    {
+    public static int[] mergeSort(int[] array) {
         throw new UnsupportedOperationException();
     }
 
     // Mergesort part of an array
-    private static int[] mergeSort(int[] array, int begin, int end)
-    {
+    private static int[] mergeSort(int[] array, int begin, int end) {
         throw new UnsupportedOperationException();
     }
 
     // Merge two sorted arrays into one
-    private static int[] merge(int[] left, int[] right)
-    {
+    private static int[] merge(int[] left, int[] right) {
         throw new UnsupportedOperationException();
     }
 }
