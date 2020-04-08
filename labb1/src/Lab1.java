@@ -1,11 +1,9 @@
-public class Lab1
-{
+public class Lab1 {
     /** Sorting algorithms **/
 
     // in-place insertion sort.
 
-    public static void insertionSort(int[] array)
-    {
+    public static void insertionSort(int[] array) {
         if (array == null || array.length <= 1)
             return;
 
@@ -23,20 +21,18 @@ public class Lab1
 
     // Quicksort.
 
-    public static void quickSort(int[] array)
-    {
+    public static void quickSort(int[] array) {
         throw new UnsupportedOperationException();
     }
 
     // Quicksort part of an array
-    private static void quickSort(int[] array, int begin, int end)
-    {
+    private static void quickSort(int[] array, int begin, int end) {
+
     }
 
     // Partition part of an array, and return the index where the pivot
     // ended up.
-    private static int partition(int[] array, int begin, int end)
-    {
+    private static int partition(int[] array, int begin, int end) {
         throw new UnsupportedOperationException();
     }
 
