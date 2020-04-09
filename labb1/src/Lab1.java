@@ -49,25 +49,25 @@ public class Lab1 {
     }
 
     // Merge two sorted arrays into one
-    private static int[] merge(int[] left, int[] right) {
-        int[] result = new int[left.length + right.length];
-        int l = 0; // index into left
-        int r = 0; // index into right
-        int i = 0; // index into result
-        for (;i<result.length; ++i) {
-            if (l >= left.length) {
-                result[i] = right[r];
-                ++r;
-            } else if (r >= right.length) {
-                result[i] = left[l];
-                ++l;
+    private static int[] merge(int[] arrayA, int[] arrayB) {
+        int[] result = new int[arrayA.length + arrayB.length];
+        int AIndex = 0;
+        int BIndex = 0;
+
+        for (int i = 0; i < result.length; ++i) {
+            if (AIndex >= arrayA.length) {
+                result[i] = arrayB[BIndex];
+                ++BIndex;
+            } else if (BIndex >= arrayB.length) {
+                result[i] = arrayA[AIndex];
+                ++AIndex;
             } else {
-                if (left[l] < right[r]) {
-                    result[i] = left[l];
-                    ++l;
+                if (arrayA[AIndex] < arrayB[BIndex]) {
+                    result[i] = arrayA[AIndex];
+                    ++AIndex;
                 } else {
-                    result[i] = right[r];
-                    ++r;
+                    result[i] = arrayB[BIndex];
+                    ++BIndex;
                 }
             }
         }
