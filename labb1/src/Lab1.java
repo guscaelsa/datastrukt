@@ -1,22 +1,10 @@
 public class Lab1 {
     /** Sorting algorithms **/
 
-    // in-place insertion sort.
+    // Insertion sort.
 
     public static void insertionSort(int[] array) {
-        if (array == null || array.length <= 1)
-            return;
-
-        for (int i = 1; i < array.length; i++) {
-            int k = i;
-            int val = array[i];
-            // move the value upwards
-            while (k > 0 && array[k - 1] > val) {
-                array[k] = array[k - 1];
-                k--;
-            }
-            array[k] = val;
-        }
+        throw new UnsupportedOperationException();
     }
 
     // Quicksort.
