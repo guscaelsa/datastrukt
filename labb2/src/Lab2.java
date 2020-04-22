@@ -40,7 +40,7 @@ public class Lab2 {
 						"line " + line_no + ": invalid action");
 			}
 
-			if( sell_pq.size() == 0 || buy_pq.size() == 0 )continue;
+			//if( sell_pq.size() == 0 || buy_pq.size() == 0 )continue;
 			
 			// TODO:
 			// compare the bids of highest priority from each of
