@@ -16,7 +16,7 @@ main = do
   let graph = toGraph stops lines
   putStrLn "asd"
 
--- toGraph = addLines l s g = addLines l (addStops s empty)
+-- toGraph l s = addLines l (addStops s empty)
 toGraph = undefined
 
 --addStops :: [Stop] -> Graph id weight -> Graph id weight
