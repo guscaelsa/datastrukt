@@ -9,7 +9,7 @@ main = do
   args <- getArgs
   if length args /= 2
     then error ">:("
-	else return ()
+    else return ()
 
   Right stops <- readStops (args !! 0)
   Right lines <- readLines (args !! 1)
